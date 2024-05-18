@@ -1,0 +1,111 @@
+body{
+    background-image: url("back.jpg");
+    font-family: Segoe;
+    font-size: 70px;
+}
+
+table{
+    background-color:#636363;
+}
+
+.status-table {
+    margin: 20px auto; 
+}
+
+.status-table td {
+    padding: 10px;
+    border: 1px solid black; 
+    text-align: center; 
+    background-color:  #ffdde6;
+    border-width: 5px;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+header{
+    text-align: center;
+    font-family: Lucida calligraphy;
+    font-weight: bolder;
+    font-size: 100px;
+    background-color: #636363;
+    color: #ffdde6;
+}
+
+.board {
+    display: grid;
+    -ms-grid-column-align: center;
+    grid-template-columns: repeat(3, 250px);
+    grid-gap: 5px;
+    background-color: #636363;
+    padding: 5px;
+}
+
+.cell {
+    width: 250px;
+    height: 250px;
+    background-color: #ffdde6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+.btn { 
+	height:100px;
+	width: 300px; 
+    border-width: 15px;
+	padding: 10px 15px; 
+	margin: 0px 20px; 
+	font-size: 35px; 
+	transition: 0.5s; 
+	color: black; 
+	font-weight: bold; 
+} 
+
+.btn:hover {
+  background-color: #ffdde6;
+  color: #636363;
+}
+
+footer{
+	color: #ffdde6;; 
+	text-align: center; 
+	font-size: 40px;
+	font-family: Segoe;
+	background-color:  #636363;
+	font-weight: bolder;
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.cell.X {
+    color: #748891;
+}
+
+.cell.O {
+    color: #dc5f82; 
+}
+
+#status {
+    color: #748891; 
+    text-align:center;
+    font-weight: bolder;
+}
+
+#buttons {
+    text-align: center;
+    margin-top: 20px; 
+}
